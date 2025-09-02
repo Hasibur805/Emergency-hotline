@@ -17,12 +17,12 @@
     <head>
         <!-- navbar  -->
          <nav>
-            <div class="navbar bg-base-100 shadow-sm flex justify-between px-12 py-5">
+            <div class="navbar bg-base-100 shadow-sm flex justify-between px-6 sm:px-12 py-5">
               <div class="flex items-center gap-3">
                 <img src="./assets/logo.png" class="h-14 w-14" alt="logo">
                 <p class="text-[#006747] font-extrabold text-2xl">Emergency <br> Service</p>
               </div>
-              <div class="flex gap-5">
+              <div class="gap-5 hidden sm:flex ">
                 <div class="flex items-center gap-2 h-12 bg-[#41ff6b1a] py-3 px-5 rounded-[45%]">
                     <p class="font-bold">0</p>
                     <img src="./assets/heart.png" class="h-5 w-5" alt="Heart">
@@ -35,36 +35,51 @@
                 </div>
                 <div class="flex text-white items-center gap-2 h-13 bg-[#00a63e] py-3 px-5 rounded-[45%] text-bold">
                     <p>0</p>
-                    <p class="font-bold">Copy</p>
-                    
+                    <p class="font-bold">Copy</p>                   
 
                 </div>
-                
+                                
               </div>
+              <!-- responsive  -->
+                <details class="block sm:hidden">
+                  <summary>More</summary>
+                    <ul class="bg-base-100 rounded-t-none p-2">
+                      <div class="flex items-center gap-2 h-9 sm:h-12 bg-[#41ff6b1a] py-3 px-5 rounded-[35%]">
+                    <p class="font-bold">0</p>
+                    <img src="./assets/heart.png" class="h-5 w-5" alt="Heart">
+
+                </div>
+                      <div class="flex items-center gap-2 h-9 sm:h-12 bg-[#41ff6b1a] py-3 px-5 rounded-[35%] mt-2">
+                    <p class="font-bold">100</p>
+                    <img src="./assets/coin.png" class="h-5 w-5" alt="Heart">
+
+                </div>                     
+                    </ul>
+                  </details>
             </div>
          </nav>
     </head>
     <main>
         <!-- banner section  -->
          <section>
-            <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] h-64 w-full text-center items-center py-5">
+            <div class="bg-gradient-to-r from-[#013223] via-[#006747] to-[#013223] min-h-64 w-full text-center items-center py-5">
               <img src="./assets/logo-dark.png" class="h-[100px] w-[100px] mx-auto " alt="">
               <h1 class="text-white text-3xl font-semibold my-5">জরুরি সেবা ডিরেক্টরি</h1>
-              <p class="text-white">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
+              <p class="text-white p-4">Government Emergency Services at Your Fingertip – A Project by  Government of the People’s Republic of Bangladesh</p>
             </div>
 
          </section>
 
          <!-- service section  -->
-          <section class="grid grid-cols-12 mx-auto gap-5 px-12 bg-[#41ff6b1a]">
+          <section class="grid grid-cols-1  md:grid-cols-12 mx-auto gap-5 px-12 bg-[#41ff6b1a]">
             <section class="col-span-9 my-12">
-              <div class="grid grid-cols-3 gap-7">
+              <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-7">
                 <!-- card div  -->
 
                  <!-- emergency -->
                 <div class="bg-white p-7 rounded-xl shadow-lg">
                   <div class="flex justify-between items-center mb-4">
-                    <img src="./assets/emergency.png" class="bg-[#FFE3E2] h-14  p-3 rounded-2xl" alt="">
+                    <img src="./assets/emergency.png" class="bg-[#FFE3E2] h-14  p-3 rounded-3xl" alt="">
                     <button class="btn btn-square">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
                     </button> 
@@ -83,7 +98,7 @@
                 <!-- police  -->
                 <div class="bg-white p-7 rounded-xl shadow-lg">
                   <div class="flex justify-between items-center mb-4">
-                    <img src="./assets/police.png" class="bg-[#FFE3E2] h-14  p-3 rounded-2xl" alt="">
+                    <img src="./assets/police.png" class="bg-[#FFE3E2] h-14  p-3 rounded-3xl" alt="">
                     <button class="btn btn-square">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
                     </button> 
@@ -102,7 +117,7 @@
                 <!-- Fir service  -->
                 <div class="bg-white p-7 rounded-xl shadow-lg">
                   <div class="flex justify-between items-center mb-4">
-                    <img src="./assets/fire-service.png" class="bg-[#FFE3E2] h-14  p-3 rounded-2xl" alt="">
+                    <img src="./assets/fire-service.png" class="bg-[#FFE3E2] h-14  p-3 rounded-3xl" alt="">
                     <button class="btn btn-square">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
                     </button> 
@@ -121,7 +136,7 @@
                 <!-- Ambulance  -->
                 <div class="bg-white p-7 rounded-xl shadow-lg">
                   <div class="flex justify-between items-center mb-4">
-                    <img src="./assets/ambulance.png" class="bg-[#FFE3E2] h-14  p-3 rounded-2xl" alt="">
+                    <img src="./assets/ambulance.png" class="bg-[#FFE3E2] h-14  p-3 rounded-3xl" alt="">
                     <button class="btn btn-square">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
                     </button> 
@@ -140,7 +155,7 @@
                 <!-- Women & Child Helpline -->
                 <div class="bg-white p-7 rounded-xl shadow-lg">
                   <div class="flex justify-between items-center mb-4">
-                    <img src="./assets/emergency.png" class="bg-[#FFE3E2] h-14  p-3 rounded-2xl" alt="">
+                    <img src="./assets/emergency.png" class="bg-[#FFE3E2] h-14  p-3 rounded-3xl" alt="">
                     <button class="btn btn-square">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
                     </button> 
@@ -159,7 +174,7 @@
                 <!-- Anti-Corruption -->
                 <div class="bg-white p-7 rounded-xl shadow-lg">
                   <div class="flex justify-between items-center mb-4">
-                    <img src="./assets/emergency.png" class="bg-[#FFE3E2] h-14  p-3 rounded-2xl" alt="">
+                    <img src="./assets/emergency.png" class="bg-[#FFE3E2] h-14  p-3 rounded-3xl" alt="">
                     <button class="btn btn-square">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
                     </button> 
@@ -179,7 +194,7 @@
                 <!-- Electricity Outage -->
                 <div class="bg-white p-7 rounded-xl shadow-lg">
                   <div class="flex justify-between items-center mb-4">
-                    <img src="./assets/emergency.png" class="bg-[#FFE3E2] h-14  p-3 rounded-2xl" alt="">
+                    <img src="./assets/emergency.png" class="bg-[#FFE3E2] h-14  p-3 rounded-3xl" alt="">
                     <button class="btn btn-square">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
                     </button> 
@@ -198,7 +213,7 @@
                 <!-- Brac  -->
                 <div class="bg-white p-7 rounded-xl shadow-lg">
                   <div class="flex justify-between items-center mb-4">
-                    <img src="./assets/emergency.png" class="bg-[#FFE3E2] h-14  p-3 rounded-2xl" alt="">
+                    <img src="./assets/brac.png" class="bg-[#FFE3E2] h-14  p-3 rounded-3xl" alt="">
                     <button class="btn btn-square">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
                     </button> 
@@ -217,7 +232,7 @@
                 <!-- Bangladesh Railway  -->
                 <div class="bg-white p-7 rounded-xl shadow-lg">
                   <div class="flex justify-between items-center mb-4">
-                    <img src="./assets/emergency.png" class="bg-[#FFE3E2] h-14  p-3 rounded-2xl" alt="">
+                    <img src="./assets/Bangladesh-Railway.png" class="bg-[#FFE3E2] h-14  p-3 rounded-3xl" alt="">
                     <button class="btn btn-square">
                       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="size-[1.2em]"><path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" /></svg>
                     </button> 
@@ -236,8 +251,14 @@
                 
               </div>
             </section>
-            <aside class="col-span-3 my-12 bg-green-200">
-              <p>store the service history</p>
+            <aside class="col-span-3 my-12 bg-white p-5">
+              <div class="flex justify-between items-center">
+                <div class="flex gap-1 items-center">
+                  <i class="fa-regular fa-clock"></i>
+                  <p>Call History</p>
+                </div>
+                <button class="btn px-6 rounded-3xl text-white bg-[#00A63E]"> Clear</button>
+              </div>
             </aside>
           </section>
     </main>
